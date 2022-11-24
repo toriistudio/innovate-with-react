@@ -8,7 +8,34 @@ export default {
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    variant: {
+      control: {
+        type: "select",
+        options: ["contained", "outlined", "text"],
+      },
+    },
+    color: {
+      control: {
+        type: "select",
+        options: [
+          "primary",
+          "secondary",
+          "success",
+          "error",
+          "info",
+          "warning",
+        ],
+      },
+    },
+    size: {
+      control: {
+        type: "select",
+        options: ["small", "medium", "large"],
+      },
+    },
+    disabled: {
+      control: "boolean",
+    },
   },
 };
 

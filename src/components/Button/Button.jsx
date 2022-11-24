@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import MuiButton from "@mui/material/Button";
-import "./button.css";
+
+import styles from "./ButtonStyles";
 
 /**
  * Primary UI component for user interaction
@@ -19,6 +20,7 @@ const Button = ({
       variant={variant}
       size={size}
       style={backgroundColor && { backgroundColor }}
+      sx={styles.root}
       {...props}
     >
       {label}
