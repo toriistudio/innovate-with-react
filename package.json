@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "storybook-sync": "yarn build-storybook && anima-storybook sync"
   },
   "eslintConfig": {
     "extends": [
@@ -59,8 +60,10 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "0.0.13",
+    "anima-storybook-cli": "^0.4.0",
     "babel-plugin-named-exports-order": "0.0.2",
     "prop-types": "^15.8.1",
+    "storybook-anima": "^1.43.0",
     "webpack": "^5.75.0"
   }
 }
